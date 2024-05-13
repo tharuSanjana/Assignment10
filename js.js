@@ -57,6 +57,39 @@ $(document).ready(function() {
         $('#viewValue').append('0');
     });
 });
+
+$(document).ready(function() {
+    $('#btnAddNum').on('click', function() {
+        $('#viewValue').append('+');
+    });
+});
+
+$(document).ready(function() {
+    $('#btn-Num').on('click', function() {
+        $('#viewValue').append('-');
+    });
+});
+
+$(document).ready(function() {
+    $('#btnDevideNum').on('click', function() {
+        $('#viewValue').append('/');
+    });
+});
+
+$(document).ready(function() {
+    $('#btnMulNum').on('click', function() {
+        $('#viewValue').append('*');
+    });
+});
+
+$(document).ready(function() {
+    $('#btnDotNum').on('click', function() {
+        $('#viewValue').append('.');
+    });
+});
+
+
+
 $('#clear').on('click', function() {
     $('#viewValue').text('');
 });
