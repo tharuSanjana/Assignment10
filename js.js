@@ -94,3 +94,35 @@ $('#clear').on('click', function() {
     $('#viewValue').text('');
 });
 
+/*function solve(){
+
+    let x = document.getElementById('viewValue').value
+
+    let y = eval(x);
+
+    document.getElementById('result').value = y
+
+    return y
+
+}
+
+$('#btnEqualNum').on('click', function() {
+    let value = solve();
+    $('#viewValue').empty();
+    $('#viewValue').append(value);
+
+});*/
+
+function solve() {
+    let x = $('#viewValue').text(); // Corrected to use .text()
+    let y = eval(x);
+    return y;
+}
+
+// Event listener for the equal button
+$('#btnEqualNum').on('click', function() {
+    let value = solve();
+    $('#viewValue').empty();
+    $('#viewValue').append(value);
+});
+

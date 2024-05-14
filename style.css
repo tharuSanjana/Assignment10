@@ -1,4 +1,5 @@
 body {
+    background-image: url("assets/images/cal.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,6 +23,7 @@ div{
     right: -268px;
     color: white;
     font-size: 35px;
+    text-align: right
 
 
 }
